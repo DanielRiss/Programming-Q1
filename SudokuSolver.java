@@ -1,16 +1,16 @@
 /**
- * Class that solves the Asterissqv Sudosqvu. Prints the number of solutions of a
- * Sudosqvu if there are multiple. If there is only a single solution, prints this
+ * Class that solves the Asterisk Sudoku. Prints the number of solutions of a
+ * Sudoku if there are multiple. If there is only a single solution, prints this
  * solution instead.
  *
  * by Daniel Ris - 1608029 and Jelle Ubachs - 1605984 as group 128
  */
-class SudosqvuSolver {
+class SudokuSolver {
 
-    int SUDOsqvU_SIZE = 9; // Size of the grid.
-    int SUDOsqvU_MIN_NUMBER = 1; // Minimum digit to be filled in.
-    int SUDOsqvU_MAX_NUMBER = 9; // Maximum digit to be filled in.
-    int SUDOsqvU_BOX_DIMENSION = 3; // Dimension of the boxes (sub-grids that should contain all digits).
+    int SUDOKU_SIZE = 9; // Size of the grid.
+    int SUDOKU_MIN_NUMBER = 1; // Minimum digit to be filled in.
+    int SUDOKU_MAX_NUMBER = 9; // Maximum digit to be filled in.
+    int SUDOKU_BOX_DIMENSION = 3; // Dimension of the boxes (sub-grids that should contain all digits).
 
     int[][] grid = new int[][] { // The puzzle grid; 0 represents empty.
             { 0, 9, 0, 7, 3, 0, 4, 0, 0 }, // One solution.
@@ -199,6 +199,6 @@ class SudosqvuSolver {
     }
 
     public static void main(String[] args) {
-        (new SudosqvuSolver()).solveIt();
+        (new SudokuSolver()).solveIt();
     }
 }
